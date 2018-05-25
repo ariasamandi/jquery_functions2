@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery_functions2.css">
+    <script>
+        $(document).ready(function(){
+            console.log("ready!")
+            $('h1').click(function(){
+                $('h1').hide();
+            });
+            $('.show').click(function(){
+                $('h1').show();
+            });
+            $('.toggle').click(function(){
+                $('h1').toggle();
+            });
+            $('.slidedown').click(function(){
+                $('h1').slideDown();
+            });
+            $('.slideup').click(function(){
+                $('h1').slideUp();
+            });
+            $('.fadein').click(function(){
+                $('h1').fadeIn();
+            });
+            $('.fadeout').click(function(){
+                $('h1').fadeOut();
+            });
+            $('.addclass').click(function(){
+                $('h1').addClass('addclass');
+            });
+            $('.before').click(function(){
+                $('h1').before("<p>Test</p>")
+            });
+            $('.after').click(function(){
+                $('h1').after("<p>test</p>")
+            });
+            $('.append').click(function(){
+                $('h1').append("<p>test</p>")
+            });
+            $('.html').click(function(){
+                $('h1').html("<p>test</p>")
+            });
+            $('.val').click(function(){
+                $('input:text').val('10')
+            });
+            $('.text').click(function(){
+                $('h1').text("test")
+            });
+            $( "div" ).data( "test", { first: 16, last: "pizza!" } );
+            $( "span:first" ).text( $( "div" ).data( "test" ).first );
+            $( "span:last" ).text( $( "div" ).data( "test" ).last );
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to Jquery Functions</h1>
+    <h2>This is a practice of different jqury methods</h2>
+    <button class="show">show</button>
+    <button class="toggle">toggle</button>
+    <button class="slidedown">slide down</button>
+    <button class="slideup">slide up</button>
+    <button class="fadein">fade in</button>
+    <button class="fadeout">fade out</button>
+    <button class="addclass">add class</button>
+    <button class="before">before</button>
+    <button class="after">after</button>
+    <button class="append">append</button>
+    <button class="html">html</button>
+    <button class="attr">attr</button>
+   <input type="text" class="val">
+    <button class="text">text</button>
+    <div>
+            The values stored were
+            <span></span>
+            and
+            <span></span>
+          </div>
+           
+          <script>
+       
+          </script>
+</body>
+</html>
